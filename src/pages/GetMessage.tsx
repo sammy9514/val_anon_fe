@@ -15,12 +15,12 @@ export const GetMessage = () => {
           data?.map((el: any) => (
             <div
               key={el.id}
-              className="lg:w-[340px] lg:h-[300px] w-[270px] h-[200px]  mt-7 mx-6  border-red-500 border-[3px] rounded-md "
+              className="lg:w-[340px] lg:h-[300px] w-[270px] h-[200px]  mt-7 mx-6  border-red-500 border-[3px] rounded-md overflow-y-auto "
             >
-              <div className="w-full h-[80%] bg-[whitesmoke] p-3 rounded-t-md flex items-center justify-center capitalize">
+              <div className="w-full min-h-[80%] bg-[whitesmoke] p-3 rounded-t-md flex items-center justify-center capitalize overflow-y-auto">
                 {el?.message}
               </div>
-              <div className="text-[13px] h-[10%] text-center mt-3">
+              <div className="text-[13px] h-[10%] text-center mt-3 ">
                 {moment(Date.parse(el.createdAt)).format("LLLL")}
               </div>
             </div>
