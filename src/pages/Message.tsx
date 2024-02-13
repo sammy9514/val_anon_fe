@@ -14,7 +14,7 @@ export const Message = () => {
   const tog = useSelector((state: any) => state.togle1);
   const messageSent = useSelector((state: any) => state.messageSent1);
   const url = window.location.pathname;
-  const name = url.split("/")[2];
+  const name = url.split("/")[3];
 
   const dispatch = useDispatch();
   const schema = yup.object({

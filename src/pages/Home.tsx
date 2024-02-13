@@ -53,15 +53,17 @@ export const Home = () => {
               <input
                 {...register("name")}
                 type="text"
-                className="rounded-[50px] border-red-500 border-[2px] py-1 px-[90px] md:px-[50px] md:py-2 text-[13px] bg-transparent mr-4 flex placeholder-black ::placeholder"
+                className="rounded-[50px] border-red-500 border-[2px] py-1 px-[90px] md:px-[40px] md:w-[400px] w-[250px] md:py-2 text-[13px] bg-transparent mr-4 flex placeholder-black ::placeholder text-center"
                 placeholder="Enter your name"
               />
-              <button
-                type="submit"
-                className="md:py-2 md:px-[30px] py-1 px-[20px] text-[13px] md:text-[16px] bg-red-700 rounded-[50px] text-white mt-4"
-              >
-                Generate Link
-              </button>
+              <div className="flex justify-center">
+                <button
+                  type="submit"
+                  className="md:py-2 md:px-[30px] py-1 px-[20px] text-[13px] md:text-[16px] bg-red-700 rounded-[50px] text-white mt-4 flex text-center justify-center"
+                >
+                  Generate Link
+                </button>
+              </div>
             </form>
           ) : null}
         </div>
