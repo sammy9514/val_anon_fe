@@ -80,7 +80,7 @@ export const Home = () => {
                   <div
                     className="text-[15px] hover:text-green-500"
                     onClick={() => {
-                      const message = `message me anonymously \n \n${url}/${selector?.link}`;
+                      const message = `message me anonymously 🤫🙈 \n \n${url}/${selector?.link}`;
                       const encodeMessage = encodeURIComponent(message);
                       const whatsappURL = `https://wa.me/?text=${encodeMessage}`;
 

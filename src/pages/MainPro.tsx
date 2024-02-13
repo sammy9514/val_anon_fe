@@ -54,21 +54,22 @@ const Main: React.FC = () => {
       "Surely not?",
       "You fit regret this!",
       "Give it another thought!",
-      "Are you absolutely certain?",
+      "Are you sure?",
       "This could be a mistake!",
       "Omor have a heart na!",
       "Don't be so cold!",
       "Change of heart?",
       "Wouldn't you reconsider?",
       "Is that your final answer?",
-      "You're breaking my heart ;(🤧🥺)",
+      "You're breaking my heart 🤧🥺",
+      "Please na",
     ];
 
     const currentPhrase = phrases[Math.min(noCount, phrases.length - 1)];
 
     if (noCount === phrases.length - 1) {
       // If it's the last phrase, show a toast message
-      return "Ouch! You don't want to go on a val with me.";
+      return "Ouch! I'm lonely";
     }
 
     return currentPhrase;
@@ -105,19 +106,19 @@ const Main: React.FC = () => {
             src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
             alt="Valentine Bear"
           />
-          <h1 className="text-4xl my-4 rounded-md mobile:text-[35px] phone:text-[32px] radio:text-[26px]">
+          <h1 className="md:text-4xl text-[20px] font-bold my-4 rounded-md mobile:text-[30px] phone:text-[32px] radio:text-[26px]">
             Will you be my Val?
           </h1>
           <div className="mobile:flex mobile:items-center mobile:justify-center mobile:flex-col mobile:gap-[10px] flex gap-4">
             <button
-              className={`bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-lg`}
+              className={`bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded md:text-lg text-[15px]`}
               onClick={handleYesClick}
             >
               Yes
             </button>
             <button
               onClick={handleNoClick}
-              className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-lg"
+              className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded md:text-lg text-[15px]"
             >
               {noCount === 0 ? "No" : getNoButtonText()}
             </button>

@@ -6,7 +6,7 @@ export const Header = () => {
   const selector = useSelector((state: any) => state.user);
   console.log(selector);
   const url = window.location.pathname;
-  const spli = url.split("/")[1];
+  const spli = url.split("/")[2];
 
   return (
     <div

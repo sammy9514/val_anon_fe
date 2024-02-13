@@ -35,7 +35,7 @@ function Timer() {
 
   return (
     <div className=" flex items-center justify-center flex-col gap-[5px] mb-[18px]">
-      <h2 className="text-4xl my-4 rounded-md mobile:text-[35px] phone:text-[32px] radio:text-[26px]">
+      <h2 className="text-4xl my-4 rounded-md mobile:text-[35px] phone:text-[32px] radio:text-[26px] font-bold">
         Valentine is
       </h2>
       <div className="countdown flex gap-[20px] ">
