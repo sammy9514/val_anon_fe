@@ -11,7 +11,7 @@ export const GetMessage = () => {
   return (
     <div className="w-full min-h-[calc(100vh-80px)] md:h-[calc(100vh-80px)] flex items-center justify-center bg-[#e3b3d8]">
       <div className="w-[90%] h-full grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-4 sm-gap-4 ">
-        {!data?.message ? (
+        {!data === undefined ? (
           data?.map((el: any) => (
             <>
               <div className="lg:w-[340px] lg:h-[300px] w-[270px] h-[200px]  mt-7 mx-6  border-red-500 border-[3px] rounded-md ">
@@ -25,7 +25,7 @@ export const GetMessage = () => {
             </>
           ))
         ) : (
-          <div className="w-full h-full flex justify-center items-center bg-white">
+          <div className="w-full h-full flex justify-center items-center ">
             No messages yet
           </div>
         )}
