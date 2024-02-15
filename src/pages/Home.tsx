@@ -71,9 +71,9 @@ export const Home = () => {
           <>
             <div className="flex gap-4 items-center flex-col md:flex-row">
               <div className="py-2 px-[30px] mt-4 bg-red-700 text-[10px] md:text-[15px] text-white  max-w-[800px] rounded-[50px] flex gap-4 items-center ">
-                <div className="">{`${url}/${selector?.link}`}</div>
+                <div className="">{`${url}${selector?.link}`}</div>
                 <div>
-                  <CopyToClipBoard text={`${url}/${selector?.link}`} />
+                  <CopyToClipBoard text={`${url}${selector?.link}`} />
                 </div>
               </div>
               <div>
@@ -82,7 +82,7 @@ export const Home = () => {
                   <div
                     className="text-[15px] hover:text-green-500"
                     onClick={() => {
-                      const message = `message me anonymously 🤫🙈 \n \n${url}/${selector?.link}`;
+                      const message = `message me anonymously 🤫🙈 \n \n${url}${selector?.link}`;
                       const encodeMessage = encodeURIComponent(message);
                       const whatsappURL = `https://wa.me/?text=${encodeMessage}`;
 
@@ -92,13 +92,13 @@ export const Home = () => {
                     <FaWhatsapp />
                   </div>
                   <div className="text-[15px] hover:text-blue-500">
-                    <ShareButtons url={`${url}/${selector?.link}`} />
+                    <ShareButtons url={`${url}${selector?.link}`} />
                   </div>
                   <div className="text-[15px]"></div>
                 </button>
               </div>
             </div>
-            <Link to={`/anon/get-message/${selector?.token}`}>
+            <Link to={`get-message/${selector?.token}`}>
               <button className="rounded-[50px] border-red-500 border-[2px] py-1 md:py-2 px-[20px] md:text-[13px] text-[10px] bg-transparent mr-4 mt-4">
                 View Messages
               </button>

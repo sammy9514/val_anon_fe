@@ -6,7 +6,7 @@ import { GetMessage } from "../pages/GetMessage";
 
 export const MainRouter = createBrowserRouter([
   {
-    path: "/anon",
+    path: "/",
     element: <Layout />,
     children: [
       {

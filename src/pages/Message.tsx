@@ -14,7 +14,7 @@ export const Message = () => {
   const tog = useSelector((state: any) => state.togle1);
   const messageSent = useSelector((state: any) => state.messageSent1);
   const url = window.location.pathname;
-  const name = url.split("/")[3];
+  const name = url.split("/")[2];
 
   const dispatch = useDispatch();
   const schema = yup.object({
@@ -77,7 +77,7 @@ export const Message = () => {
               Message sent
             </div>
             <div className="flex w-full mt-6 justify-end">
-              <Link to={"/anon"}>
+              <Link to={"/"}>
                 <button
                   type="submit"
                   className="md:py-2 py-1 text-[13px] md:text-[16px] px-[30px] bg-red-700 rounded-[50px] text-white "
