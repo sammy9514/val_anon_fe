@@ -3,7 +3,7 @@ import { Layout } from "../components/Layout";
 import { HomeScreen } from "../pages/HomeScreen";
 import { Message } from "../pages/Message";
 import { GetMessage } from "../pages/GetMessage";
-import Main from "../pages/MainPro";
+
 export const MainRouter = createBrowserRouter([
   {
     path: "/anon",
@@ -23,8 +23,8 @@ export const MainRouter = createBrowserRouter([
       },
     ],
   },
-  {
-    path: "/",
-    element: <Main />,
-  },
+  // {
+  //   path: "/",
+  //   element: <Main />,
+  // },
 ]);
